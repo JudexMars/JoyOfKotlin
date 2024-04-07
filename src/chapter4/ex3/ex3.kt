@@ -36,9 +36,9 @@ fun fibonacciCorecursive2(number: BigInteger): BigInteger {
 
 fun main() {
     println("Fibonacci recursive function result:")
-    (0 until 10).forEach { print("${fibonacci(it)} ") }
+    (0..<10).forEach { print("${fibonacci(it)} ") }
     println("\nFibonacci corecursive function result:")
-    (0L until 10L).forEach { print("${fibonacciCorecursive(BigInteger.valueOf(it))} ") }
+    (0L..<10L).forEach { print("${fibonacciCorecursive(BigInteger.valueOf(it))} ") }
     println("\nFibonacci corecursive function 2 result:")
-    (0L until 10L).forEach { print("${fibonacciCorecursive2(BigInteger.valueOf(it))} ") }
+    (0L..<10L).forEach { print("${fibonacciCorecursive2(BigInteger.valueOf(it))} ") }
 }
